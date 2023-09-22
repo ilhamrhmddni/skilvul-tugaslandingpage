@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="asset/logo_kasir_online.png" alt="Logo">
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#fitur">Fitur</a></li>
+                <li><a href="#tentang-kami">Tentang Kami</a></li>
+                <li><a href="#langganan">Langganan</a></li>
+                <li id="masuk-daftar"></li>
+            </ul>
+            <ul id="masuk-daftar">
+                <a href="#masuk">Login</a>
+                <a href="#daftar">Daftar</a>
+            </ul>
+        </nav>
+    </header>
+    <main style="display: flex;">
+        <section>
+            <img src="asset/hero_picture.png" alt="Gambar Website">
+            <p id="description" >Mari Langganan dengan Kami
+            </p>
+        </section>
+        <section>
+            <h2>Formulir Langganan Produk Kami</h2>
+            <form id="myForm">
+                <div style="display: flex-row;">
+                    <div class="form">
+                        <label class="label">Nama :</label><br>
+                        <input id="name" type="text" placeholder="Nama">
+                    </div>
+                    <div class="form">
+                        <label class="label">City :</label><br>
+                        <input id="city" type="text" placeholder="City">
+                    </div>
+                    <div class="form">
+                        <label class="label">Email :</label><br>
+                        <input id="email" type="email" placeholder="Email">
+                    </div>
+                    <div class="form">
+                        <label class="label">Zip Code :</label><br>
+                        <input id="zip-code" type="number" placeholder="Zip Code">
+                    </div>
+                </div>
+                <div class="kotak-submit">
+                    <label id="check">
+                        <input id="status" type="checkbox"> 
+                        <p>Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai.</p>
+                    </label>
+                    <button id="submit-form" type="submit">Submit</button>
+                </div>
+                <div id="warning"></div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p id="link" href="https://skilvul.com">@copyright Skilvul</p>
+            <a href="https://skilvul.com"><img src="asset/logo_skilvul.png" alt="logo skilvul"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
